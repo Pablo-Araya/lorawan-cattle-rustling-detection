@@ -1,508 +1,451 @@
 <!DOCTYPE html>
+
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <meta content="Supplementary visual documentation and laboratory evidence for a LoRaWAN-based IoT prototype for cattle-rustling-compatible event detection." name="description"/>
-  <meta content="#112c23" name="theme-color"/>
-  <meta content="LoRaWAN-Based IoT Prototype | Cattle Rustling Detection" property="og:title"/>
-  <meta content="Supplementary photographic, architectural, and functional validation material for an academic research prototype." property="og:description"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Supplementary visual documentation and laboratory evidence for a LoRaWAN-based IoT prototype for cattle-rustling-compatible event detection." name="description"/>
+<meta content="#112c23" name="theme-color"/>
+<meta content="LoRaWAN-Based IoT Prototype | Cattle Rustling Detection" property="og:title"/>
+<meta content="Supplementary photographic, architectural, and functional validation material for an academic research prototype." property="og:description"/>
+<title>
    LoRaWAN Cattle Rustling Detection | Research Prototype
   </title>
-  <link href="assets/css/style.css" rel="stylesheet"/>
-  <script defer="" src="assets/js/main.js">
-  </script>
- </head>
- <body>
-  <a class="skip" href="#main">
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script defer="" src="assets/js/main.js">
+</script>
+</head>
+<body>
+<a class="skip" href="#main">
    Skip to content
   </a>
-  <header class="header">
-   <div class="wrap nav">
-    <a class="brand" href="#top">
-     <span>
+<header class="header">
+<div class="wrap nav">
+<a class="brand" href="#top">
+<span>
       LoRaWAN
      </span>
      / Cattle Rustling Research
     </a>
-    <nav aria-label="Primary navigation" class="navlinks">
-     <a href="#prototype">
+<nav aria-label="Primary navigation" class="navlinks">
+<a href="#prototype">
       Prototype
      </a>
-     <a href="#architecture">
+<a href="#architecture">
       Architecture
      </a>
-     <a href="#demonstrations">
+<a href="#demonstrations">
       Videos
      </a>
-     <a href="#platform">
+<a href="#platform">
       Platform
      </a>
-     <a href="#results">
+<a href="#results">
       Results
      </a>
-     <a href="#publication">
+<a href="#publication">
       Publication
      </a>
-    </nav>
-   </div>
-  </header>
-  <main id="main">
-   <section class="hero" id="top">
-    <div class="wrap">
-     <span class="eyebrow">
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero" id="top">
+<div class="wrap">
+<span class="eyebrow">
       Supplementary experimental documentation · 2026
      </span>
-     <h1>
+<h1>
       Development of a LoRaWAN-Based IoT Prototype for the Early Detection of Events Compatible with Cattle Rustling in Bovine Herds
      </h1>
-     <p class="lead">
+<p class="lead">
       An experimental monitoring system integrating geolocation, inertial activity, physical-integrity detection, exploratory physiological sensing and a web-based alert platform.
      </p>
-     <p class="meta">
+<p class="meta">
       Pablo Araya del Pino · Cecilia Gamonal Vera · Jorge Retamal Pinto
       <br/>
       Universidad Andrés Bello · Chile · 2026
      </p>
-     <div class="hero-cta">
-      <a class="btn primary" href="#demonstrations">
+<div class="hero-cta">
+<a class="btn primary" href="#demonstrations">
        Explore demonstrations ↗
       </a>
-      <a class="btn secondary" href="#publication">
+<a class="btn secondary" href="#publication">
        Research publication →
       </a>
-     </div>
-     <p class="scope">
+</div>
+<p class="scope">
       Proof of concept · Indoor laboratory validation only · No field testing on cattle
      </p>
-    </div>
-   </section>
-   <section class="section" id="prototype">
-    <div class="wrap">
-     <span class="eyebrow">
+</div>
+</section>
+<section class="section" id="prototype">
+<div class="wrap">
+<span class="eyebrow">
       01 / Prototype overview
      </span>
-     <h2>
+<h2>
       Two experimental units. One integrated architecture.
      </h2>
-     <p class="intro">
+<p class="intro">
       CB01 and CB02 were assembled as equivalent experimental devices and evaluated under controlled laboratory conditions. The system was designed for future integration into cattle-worn monitoring hardware.
      </p>
-     <div class="grid two prototype-gallery">
-      <div class="card">
-       <div class="placeholder image-holder" data-image="assets/images/prototypes/prototype-cb01.jpeg">
-        <span>Photograph of CB01</span>
-       </div>
-       <div class="card-pad">
-        <h3>CB01 — Powered-on prototype</h3>
-        <p class="small muted">Experimental unit CB01 operating in NORMAL state, with OLED telemetry, battery indication, satellite count and sensor diagnostics.</p>
-       </div>
-      </div>
-      <div class="card">
-       <div class="placeholder image-holder" data-image="assets/images/prototypes/prototype-cb02.jpeg">
-        <span>Photograph of CB02</span>
-       </div>
-       <div class="card-pad">
-        <h3>CB02 — Powered-on prototype</h3>
-        <p class="small muted">Experimental unit CB02 operating in NORMAL state, showing the active electronics and OLED monitoring interface.</p>
-       </div>
-      </div>
-      <div class="card">
-       <div class="placeholder image-holder" data-image="assets/images/prototypes/cb02.jpeg">
-        <span>
-         Photograph pending · CB02
-        </span>
-       </div>
-       <div class="card-pad">
-        <h3>
-         Prototype CB02 · OLED status
-        </h3>
-        <p class="small muted">
-         Recorded operational screen of unit CB02 (firmware v4.2).
-        </p>
-       </div>
-      </div>
-      <div class="card">
-       <div class="placeholder image-holder" data-image="assets/images/prototypes/oled-display.jpeg">
-        <span>
-         Photograph pending · OLED display
-        </span>
-       </div>
-       <div class="card-pad">
-        <h3>
-         OLED display · CB01
-        </h3>
-        <p class="small muted">
-         CB01 operational display showing status and sensor diagnostics.
-        </p>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-   <section class="section" id="architecture">
-    <div class="wrap">
-     <span class="eyebrow">
+<div class="grid two prototype-gallery">
+<div class="card">
+<img alt="CB01 — Powered-on prototype" aria-label="Enlarge CB01 — Powered-on prototype" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/prototypes/prototype-cb01.jpeg" tabindex="0"/>
+<div class="card-pad">
+<h3>CB01 — Powered-on prototype</h3>
+<p class="small muted">Experimental unit CB01 in NORMAL operating state, showing active hardware, the OLED interface and sensor diagnostics.</p>
+</div>
+</div>
+<div class="card">
+<img alt="CB02 — Powered-on prototype" aria-label="Enlarge CB02 — Powered-on prototype" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/prototypes/prototype-cb02.jpeg" tabindex="0"/>
+<div class="card-pad">
+<h3>CB02 — Powered-on prototype</h3>
+<p class="small muted">Experimental unit CB02 in NORMAL operating state, showing active hardware, the OLED interface and sensor diagnostics.</p>
+</div>
+</div>
+<div class="card">
+<img alt="CB01 — OLED status" aria-label="Enlarge CB01 — OLED status" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/prototypes/cb01.jpeg" tabindex="0"/>
+<div class="card-pad">
+<h3>CB01 — OLED status</h3>
+<p class="small muted">Operational display of CB01 showing device status, battery level, sensor readings and diagnostics.</p>
+</div>
+</div>
+<div class="card">
+<img alt="CB02 — OLED status" aria-label="Enlarge CB02 — OLED status" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/prototypes/cb02.jpeg" tabindex="0"/>
+<div class="card-pad">
+<h3>CB02 — OLED status</h3>
+<p class="small muted">Operational display of CB02 showing device status, battery level, sensor readings and diagnostics.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="architecture">
+<div class="wrap">
+<span class="eyebrow">
       02 / System architecture
      </span>
-     <h2>
+<h2>
       Device → Network → Application
      </h2>
-     <p class="intro">
+<p class="intro">
       The high-level architecture follows the three layers described in Figure 1 of the research paper. The gateway requires an Internet backhaul to communicate with the network server.
      </p>
-     <img alt="Three-layer architecture connecting prototype devices, LoRaWAN gateway and TTN server to the web platform" class="asset-img" src="assets/images/architecture/system-architecture.svg"/>
-     <p class="caption">
+<img alt="Three-layer architecture connecting prototype devices, LoRaWAN gateway and TTN server to the web platform" class="asset-img" src="assets/images/architecture/system-architecture.svg"/>
+<p class="caption">
       Conceptual redrawing of the three-layer architecture in the paper (Fig. 1).
      </p>
-     <div class="grid two" style="margin-top:24px">
-      <div class="card card-pad">
-       <h3>
+<div class="grid two" style="margin-top:24px">
+<div class="card card-pad">
+<h3>
         Integrated sensing
        </h3>
-       <img alt="Sensing overview showing location, inertial activity, tampering and exploratory physiological sensors" class="asset-img" src="assets/images/architecture/sensing-overview.svg"/>
-       <p class="small muted">
+<img alt="Sensing overview showing location, inertial activity, tampering and exploratory physiological sensors" class="asset-img" src="assets/images/architecture/sensing-overview.svg"/>
+<p class="small muted">
         Location, motion and integrity detection form the central security-oriented capabilities. Temperature and heart-rate sensing remain exploratory.
        </p>
-      </div>
-      <div class="card card-pad">
-       <h3>
+</div>
+<div class="card card-pad">
+<h3>
         Cascading thresholds
        </h3>
-       <img alt="Individual, animal category and global default threshold precedence" class="asset-img" src="assets/images/architecture/cascading-thresholds.svg"/>
-       <p class="small muted">
+<img alt="Individual, animal category and global default threshold precedence" class="asset-img" src="assets/images/architecture/cascading-thresholds.svg"/>
+<p class="small muted">
         Rules resolve from individual overrides to animal-category values and finally global defaults, independently per variable.
        </p>
-      </div>
-     </div>
-     <div class="ttn-pending">
-      <h3>
+</div>
+</div>
+<div class="ttn-pending">
+<h3>
        LoRaWAN Network Server Evidence
       </h3>
-      <p class="small muted">
-       TTN uplink screenshot: pending upload. This section will show received packets after the original capture is provided and sensitive device identifiers are redacted.
-      </p>
-     </div>
-    </div>
-   </section>
-   <section class="section" id="demonstrations">
-    <div class="wrap">
-     <span class="eyebrow">
+<p class="small muted">TTN uplink screenshot will be added when available, after redacting sensitive identifiers.</p>
+</div>
+</div>
+</section>
+<section class="section" id="demonstrations">
+<div class="wrap">
+<span class="eyebrow">
       03 / Prototype demonstrations
      </span>
-     <h2>
+<h2>
       See the system in operation.
      </h2>
-     <p class="intro">
+<p class="intro">
       A real recording of the prototype OLED startup. Additional experimental videos are not yet available; the dashboard screenshots below document the application interface.
      </p>
-     <div class="grid one-video">
-      <article class="card media-card demo-filter" data-group="hardware">
-       <video class="video" controls="" data-demo="" poster="assets/images/prototypes/oled-display.jpeg" preload="none">
-        <source src="assets/videos/oled-display-power-on.mp4" type="video/mp4"/>
+<div class="grid one-video">
+<article class="card media-card demo-filter" data-group="hardware">
+<video class="video" controls="" data-demo="" poster="assets/images/prototypes/cb01.jpeg" preload="none">
+<source src="assets/videos/oled-display-power-on.mp4" type="video/mp4"/>
         Video is not supported.
        </video>
-       <div class="media-copy">
-        <span class="mediano">
+<div class="media-copy">
+<span class="mediano">
          Real prototype footage · 14.7 s
         </span>
-        <h3>
+<h3>
          OLED Display Power-On
         </h3>
-        <p class="muted small">
+<p class="muted small">
          Actual footage of the prototype screen during startup (14.7 seconds). This video does not document a tampering alert or live TTN transmission.
         </p>
-       </div>
-      </article>
-     </div>
-     <p class="note">
+</div>
+</article>
+</div>
+<p class="note">
       This recording documents the OLED startup only. The dashboard images below are application screenshots; the study was conducted in laboratory conditions, without deployment on cattle.
      </p>
-    </div>
-   </section>
-   <section class="section" id="platform">
-    <div class="wrap">
-     <span class="eyebrow">
+</div>
+</section>
+<section class="section" id="platform">
+<div class="wrap">
+<span class="eyebrow">
       04 / Web monitoring and alert platform
      </span>
-     <h2>
+<h2>
       Operational visibility from end device to operator.
      </h2>
-     <p class="intro">
+<p class="intro">
       The application receives and stores messages, evaluates thresholds and geofences, registers alerts, and provides a management interface with multichannel notification workflows.
      </p>
-     <div class="grid three gallery">
-      <article class="card">
-       <div class="placeholder image-holder" data-image="assets/images/dashboard/overview.png">
-        <span>
-         Screenshot pending
-         <br/>
-         Monitoring Dashboard
-        </span>
-       </div>
-       <div class="card-pad">
-        <h3>
+<div class="grid three gallery">
+<article class="card">
+<img alt="Monitoring Dashboard" aria-label="Enlarge Monitoring Dashboard" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/dashboard/overview.png" tabindex="0"/>
+<div class="card-pad">
+<h3>
          Monitoring Dashboard
         </h3>
-        <p class="small muted">
+<p class="small muted">
          Overall status and pending alerts.
         </p>
-       </div>
-      </article>
-      <article class="card">
-       <div class="placeholder image-holder" data-image="assets/images/dashboard/geofences.png">
-        <span>
-         Screenshot pending
-         <br/>
-         Geofences
-        </span>
-       </div>
-       <div class="card-pad">
-        <h3>
+</div>
+</article>
+<article class="card">
+<img alt="Geofences" aria-label="Enlarge Geofences" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/dashboard/geofences.png" tabindex="0"/>
+<div class="card-pad">
+<h3>
          Geofences
         </h3>
-        <p class="small muted">
+<p class="small muted">
          Inclusion and exclusion zones.
         </p>
-       </div>
-      </article>
-      <article class="card">
-       <div class="placeholder image-holder" data-image="assets/images/dashboard/animal-detail.png">
-        <span>
-         Screenshot pending
-         <br/>
-         Individual Animal View
-        </span>
-       </div>
-       <div class="card-pad">
-        <h3>
+</div>
+</article>
+<article class="card">
+<img alt="Individual Animal View" aria-label="Enlarge Individual Animal View" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/dashboard/animal-detail.png" tabindex="0"/>
+<div class="card-pad">
+<h3>
          Individual Animal View
         </h3>
-        <p class="small muted">
+<p class="small muted">
          Per-device position and measurements.
         </p>
-       </div>
-      </article>
-      <article class="card">
-       <div class="placeholder image-holder" data-image="assets/images/dashboard/thresholds.png">
-        <span>
-         Screenshot pending
-         <br/>
-         Cascading Thresholds
-        </span>
-       </div>
-       <div class="card-pad">
-        <h3>
+</div>
+</article>
+<article class="card">
+<img alt="Cascading Thresholds" aria-label="Enlarge Cascading Thresholds" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/dashboard/thresholds.png" tabindex="0"/>
+<div class="card-pad">
+<h3>
          Cascading Thresholds
         </h3>
-        <p class="small muted">
+<p class="small muted">
          Global, category and individual configuration.
         </p>
-       </div>
-      </article>
-      <article class="card">
-       <div class="placeholder image-holder" data-image="assets/images/dashboard/alerts.png">
-        <span>
-         Screenshot pending
-         <br/>
-         Alert Management
-        </span>
-       </div>
-       <div class="card-pad">
-        <h3>
+</div>
+</article>
+<article class="card">
+<img alt="Alert Management" aria-label="Enlarge Alert Management" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/dashboard/alerts.png" tabindex="0"/>
+<div class="card-pad">
+<h3>
          Alert Management
         </h3>
-        <p class="small muted">
+<p class="small muted">
          Severity, deduplication and case handling.
         </p>
-       </div>
-      </article>
-      <article class="card">
-       <div class="placeholder image-holder" data-image="assets/images/dashboard/notifications.jpeg">
-        <span>
-         Screenshot pending
-         <br/>
-         Notifications
-        </span>
-       </div>
-       <div class="card-pad">
-        <h3>
+</div>
+</article>
+<article class="card">
+<img alt="Notifications" aria-label="Enlarge Notifications" class="asset-img gallery-photo" decoding="async" loading="lazy" role="button" src="assets/images/dashboard/notifications.jpeg" tabindex="0"/>
+<div class="card-pad">
+<h3>
          Telegram Notifications
         </h3>
-        <p class="small muted">
+<p class="small muted">
          Recorded instant-messaging alert examples.
         </p>
-       </div>
-      </article>
-     </div>
-     <h3 style="margin-top:35px">
+</div>
+</article>
+</div>
+<h3 style="margin-top:35px">
       Physical integrity event: logical flow
      </h3>
-     <img alt="Physical integrity event through LoRaWAN and the platform to operator notification" class="asset-img" src="assets/images/architecture/alert-flow.svg"/>
-     <p class="caption">
+<img alt="Physical integrity event through LoRaWAN and the platform to operator notification" class="asset-img" src="assets/images/architecture/alert-flow.svg"/>
+<p class="caption">
       Event-driven uplink and alert generation. Delivery time depends on network and downstream notification conditions.
      </p>
-     <div class="alerts">
-      <div class="alertbox cr">
-       <strong>
+<div class="alerts">
+<div class="alertbox cr">
+<strong>
         5
        </strong>
-       <p>
+<p>
         Critical alert types
        </p>
-      </div>
-      <div class="alertbox hi">
-       <strong>
+</div>
+<div class="alertbox hi">
+<strong>
         7
        </strong>
-       <p>
+<p>
         High-severity alert types
        </p>
-      </div>
-      <div class="alertbox me">
-       <strong>
+</div>
+<div class="alertbox me">
+<strong>
         3
        </strong>
-       <p>
+<p>
         Medium-severity alert types
        </p>
-      </div>
-     </div>
-     <p class="caption">
+</div>
+</div>
+<p class="caption">
       Fifteen predefined alert types in Section 4.3, Table 2 of the paper.
      </p>
-    </div>
-   </section>
-   <section class="section" id="results">
-    <div class="wrap">
-     <span class="eyebrow">
+</div>
+</section>
+<section class="section" id="results">
+<div class="wrap">
+<span class="eyebrow">
       05 / Functional validation
      </span>
-     <h2>
+<h2>
       Measured laboratory outcomes.
      </h2>
-     <p class="intro">
+<p class="intro">
       Values below reproduce the results reported in Section 4 of the paper. They are not field-performance or commercial-service claims.
      </p>
-     <div class="stats">
-      <div class="stat">
-       <strong>
+<div class="stats">
+<div class="stat">
+<strong>
         379
        </strong>
-       <span>
+<span>
         Successfully decoded uplinks
        </span>
-      </div>
-      <div class="stat">
-       <strong>
+</div>
+<div class="stat">
+<strong>
         98.7%
        </strong>
-       <span>
+<span>
         Combined LoRaWAN frame delivery
        </span>
-      </div>
-      <div class="stat">
-       <strong>
+</div>
+<div class="stat">
+<strong>
         2/2
        </strong>
-       <span>
+<span>
         Successful OTAA activation
        </span>
-      </div>
-      <div class="stat">
-       <strong>
+</div>
+<div class="stat">
+<strong>
         79.2%
        </strong>
-       <span>
+<span>
         Indoor GPS valid-fix rate
        </span>
-      </div>
-      <div class="stat">
-       <strong>
+</div>
+<div class="stat">
+<strong>
         3/3
        </strong>
-       <span>
+<span>
         Triggered tampering events received
        </span>
-      </div>
-      <div class="stat">
-       <strong>
+</div>
+<div class="stat">
+<strong>
         16
        </strong>
-       <span>
+<span>
         Automatically generated alerts
        </span>
-      </div>
-     </div>
-     <p class="note">
+</div>
+</div>
+<p class="note">
       In the three induced tampering tests, the observed end-to-end time from circuit interruption to Telegram notification was approximately 17 seconds. This is an experimental observation, not a guaranteed service-level latency.
      </p>
-    </div>
-   </section>
-   <section class="section" id="publication">
-    <div class="wrap">
-     <span class="eyebrow">
+</div>
+</section>
+<section class="section" id="publication">
+<div class="wrap">
+<span class="eyebrow">
       06 / Publication and scope
      </span>
-     <h2>
+<h2>
       About this research.
      </h2>
-     <div class="grid two">
-      <div>
-       <h3>
+<div class="grid two">
+<div>
+<h3>
         Research publication
        </h3>
-       <p>
-        <strong>
+<p>
+<strong>
          Development of a LoRaWAN-Based IoT Prototype for the Early Detection of Events Compatible with Cattle Rustling in Bovine Herds
         </strong>
-       </p>
-       <p class="muted small">
+</p>
+<p class="muted small">
         Pablo Araya del Pino, Cecilia Gamonal Vera, Jorge Retamal Pinto · Universidad Andrés Bello (2026).
        </p>
-       <p class="small muted">
+<p class="small muted">
         Journal/conference citation and DOI: to be added after publication. The peer-reviewed article remains the authoritative source; this website offers visual supplementary material.
        </p>
-       <div class="linklist">
-        <a href="https://github.com/Pablo-Araya/lorawan-cattle-rustling-detection" rel="noopener" target="_blank">
+<div class="linklist">
+<a href="https://github.com/Pablo-Araya/lorawan-cattle-rustling-detection" rel="noopener" target="_blank">
          View the GitHub repository ↗
         </a>
-       </div>
-      </div>
-      <div class="scopebox">
-       <h3>
+</div>
+</div>
+<div class="scopebox">
+<h3>
         Limitations and future work
        </h3>
-       <p class="small">
+<p class="small">
         The study validated integration in an indoor laboratory with two units. It did not evaluate field performance on cattle, effectiveness against actual cattle rustling, LoRaWAN scaling under large herds, device energy autonomy, or integration with official Chilean traceability systems. Temperature and heart-rate sensing require bovine-specific validation.
        </p>
-       <p class="small">
+<p class="small">
         Further work includes field deployment, physiological calibration, energy characterization, network scalability and security assessment.
        </p>
-      </div>
-     </div>
-    </div>
-   </section>
-  </main>
-  <footer class="site-footer">
-   <div class="wrap">
-    <strong>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<strong>
      LoRaWAN Cattle Rustling Research · 2026
     </strong>
-    <p>
+<p>
      © 2026 Pablo Araya del Pino, Cecilia Gamonal Vera and Jorge Retamal Pinto. All rights reserved. No reproduction, redistribution or derivative use is authorized without written permission, subject to applicable law and GitHub platform terms.
     </p>
-    <p>
+<p>
      Supplementary academic documentation · Not a field-validated cattle theft prevention system.
     </p>
-   </div>
-  </footer>
-  <dialog aria-label="Enlarged screenshot" id="image-dialog">
-   <button aria-label="Close image" class="lightbox-close" type="button">
+</div>
+</footer>
+<dialog aria-label="Enlarged screenshot" id="image-dialog">
+<button aria-label="Close image" class="lightbox-close" type="button">
     ×
    </button>
-   <img alt="Enlarged research image"/>
-  </dialog>
- </body>
+<img alt="Enlarged research image"/>
+</dialog>
+</body>
 </html>
