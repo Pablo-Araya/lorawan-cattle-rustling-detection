@@ -167,37 +167,54 @@
 </section>
 <section class="section" id="demonstrations">
 <div class="wrap">
-<span class="eyebrow">
-      03 / Prototype demonstrations
-     </span>
-<h2>
-      See the system in operation.
-     </h2>
-<p class="intro">
-      A real recording of the prototype OLED startup. Additional experimental videos are not yet available; the dashboard screenshots below document the application interface.
-     </p>
+<span class="eyebrow">03 / Prototype demonstrations</span>
+<h2>See the system in operation.</h2>
+<p class="intro">Laboratory recordings of the prototype and its alert workflow. Physical integrity events are deliberately induced for functional validation; no testing on cattle was performed.</p>
+<h3 class="demo-subheading">Physical integrity: event and notification</h3>
+<div class="grid two tampering-pair">
+  <article class="card media-card">
+    <div class="tampering-media" id="tampering-hardware-media">
+      <video class="video portrait-video" controls preload="metadata" playsinline aria-label="Physical circuit tampering demonstration">
+        <source src="assets/videos/tampering-circuit-demo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="media-missing" hidden>Physical circuit demonstration video pending. Add <code>tampering-circuit-demo.mp4</code> to <code>assets/videos/</code>.</div>
+    </div>
+    <div class="media-copy">
+      <span class="mediano">01 / Physical device · Laboratory demonstration</span>
+      <h3>Circuit Tampering — Prototype</h3>
+      <p class="muted small">Demonstration of the deliberate interruption of the device's physical-integrity circuit and its resulting security state.</p>
+    </div>
+  </article>
+  <article class="card media-card">
+    <div class="tampering-media">
+      <video class="video portrait-video" controls preload="metadata" playsinline aria-label="Telegram notification of a critical circuit tampering alert">
+        <source src="assets/videos/tampering-circuit-alert.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <div class="media-copy">
+      <span class="mediano">02 / Telegram · Recorded notification</span>
+      <h3>Critical Alert — Operator Notification</h3>
+      <p class="muted small">Recorded alert interface showing the critical notification after an induced physical-integrity event. The clips illustrate the workflow and are not synchronized measurements of latency.</p>
+    </div>
+  </article>
+</div>
+<h3 class="demo-subheading">OLED startup and device diagnostics</h3>
 <div class="grid one-video">
-<article class="card media-card demo-filter" data-group="hardware">
-<video class="video" controls="" data-demo="" poster="assets/images/prototypes/cb01.jpeg" preload="none">
-<source src="assets/videos/oled-display-power-on.mp4" type="video/mp4"/>
-        Video is not supported.
-       </video>
-<div class="media-copy">
-<span class="mediano">
-         Real prototype footage · 14.7 s
-        </span>
-<h3>
-         OLED Display Power-On
-        </h3>
-<p class="muted small">
-         Actual footage of the prototype screen during startup (14.7 seconds). This video does not document a tampering alert or live TTN transmission.
-        </p>
+  <article class="card media-card">
+    <video class="video" controls preload="metadata" playsinline poster="assets/images/prototypes/cb01.jpeg" aria-label="OLED prototype boot and device diagnostics">
+      <source src="assets/videos/oled-display-power-on.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="media-copy">
+      <span class="mediano">Real prototype footage · 14.7 s</span>
+      <h3>OLED Display Power-On</h3>
+      <p class="muted small">Experimental device startup, operating status and sensor diagnostics. This recording is separate from the tampering demonstration.</p>
+    </div>
+  </article>
 </div>
-</article>
-</div>
-<p class="note">
-      This recording documents the OLED startup only. The dashboard images below are application screenshots; the study was conducted in laboratory conditions, without deployment on cattle.
-     </p>
+<p class="note">These recordings complement the paper's controlled laboratory validation. They do not demonstrate cattle-field deployment or detection accuracy against actual cattle rustling.</p>
 </div>
 </section>
 <section class="section" id="platform">
@@ -447,5 +464,14 @@
    </button>
 <img alt="Enlarged research image"/>
 </dialog>
+<script>
+  document.querySelectorAll('.tampering-pair video').forEach(video => {
+    const frame = video.closest('.tampering-media');
+    const fallback = frame?.querySelector('.media-missing');
+    const showMissing = () => { if (fallback) { video.hidden = true; fallback.hidden = false; } };
+    video.addEventListener('error', showMissing);
+    video.querySelector('source')?.addEventListener('error', showMissing);
+  });
+</script>
 </body>
 </html>
